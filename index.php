@@ -49,20 +49,15 @@
     </head>
 
     <body class="container">
-        <form class="row g-3" action="index.php" method="GET">
-
+        <h2 class="mt-3">Password generator:</h2>
+        <form class="row g-3 mt-3" action="index.php" method="GET">
             <div class="col-auto">
                 <label for="number" class="">Lunghezza</label>
-
-                <input type="number" min="3" class="" name="number" id="number">
+                <input type="number" min="8" max="32"class="" name="number" id="number" required>
             </div>
-
-            
-
             <div class="col-auto">
                 <button type="submit" class="btn btn-primary mb-3">Generate Password</button>
             </div>
         </form>
-        
     </body>
 </html>
